@@ -659,7 +659,7 @@ const FileUpload = () => {
     return (
 
 <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#D8B4FE] to-[#A78BFA] text-white p-5">
-    <div className="bg-white/20 backdrop-blur-xl p-8 rounded-2xl shadow-xl w-full max-w-2xl">
+    <div className="bg-white/20 backdrop-blur-xl p-8 rounded-2xl shadow-xl w-full max-w-2xl z-10">
         <h1 className="text-3xl font-bold text-center mb-6 text-purple-900">GPA Calculator</h1>
         <input 
             type="file" 
@@ -674,7 +674,7 @@ const FileUpload = () => {
                     ref={cropperRef} 
                     src={imageSrc} 
                     guides={false} 
-                    className="w-full h-100 rounded-lg shadow-md"
+                    className="w-full h-60 rounded-lg shadow-md"
                 />
                 {/* <button 
                     onClick={getCroppedImage} 
